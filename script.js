@@ -7,7 +7,7 @@ if (menuToggle && navLinks) {
     navLinks.classList.toggle('active');
   });
 
-  // Cierra el menú móvil al hacer clic en cualquier enlace
+  // Cierra el menú en celulares al seleccionar un enlace
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
@@ -15,19 +15,17 @@ if (menuToggle && navLinks) {
   });
 }
 
-// --- VENTANA MODAL DE PROYECTOS ---
+// --- VENTANA MODAL PARA PROYECTOS ---
 const modal = document.getElementById('project-modal');
 const modalClose = document.getElementById('modal-close');
 const modalButtons = document.querySelectorAll('.btn-modal');
 
-// Elementos internos de la modal
 const modalTitle = document.getElementById('modal-title');
 const modalCategory = document.getElementById('modal-category');
 const modalDesc = document.getElementById('modal-desc');
 const modalTechList = document.getElementById('modal-tech-list');
 
 if (modal && modalClose) {
-  // Abrir modal pasando los datos configurados en el botón
   modalButtons.forEach(button => {
     button.addEventListener('click', () => {
       modalTitle.textContent = button.getAttribute('data-title');
@@ -39,12 +37,10 @@ if (modal && modalClose) {
     });
   });
 
-  // Cerrar modal al presionar la X
   modalClose.addEventListener('click', () => {
     modal.classList.remove('active');
   });
 
-  // Cerrar modal si hace clic en el fondo oscuro fuera del cuadro
   window.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');

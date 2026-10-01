@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nico - Portafolio</title>
-  <!-- Enlace corregido a styles.css -->
+  <title>Nico - Portafolio Dev</title>
+  
+  <!-- Fuentes de Google: Plus Jakarta Sans (Texto) & Fira Code (Estilo Código/Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
-    <div class="logo">NICO <span>.DEV</span></div>
+    <div class="logo">&lt;NICO <span>.DEV/&gt;</span></div>
     
-    <!-- Botón Menú Hamburguesa para Móvil -->
     <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
       <span></span>
       <span></span>
@@ -22,11 +26,11 @@
 
     <nav>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#acerca">Acerca de mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inicio">// inicio</a></li>
+        <li><a href="#acerca">// acerca</a></li>
+        <li><a href="#habilidades">// skills</a></li>
+        <li><a href="#proyectos">// proyectos</a></li>
+        <li><a href="#contacto">// contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -34,12 +38,16 @@
   <!-- HERO SECTION -->
   <section id="inicio" class="hero">
     <div class="hero-content">
-      <p class="greeting">¡Hola! Mi nombre es</p>
-      <h1>Nico</h1>
-      <h2>Desarrollador & Creador Digital</h2>
-      <p class="bio-short">Construyo experiencias web interactivas, desarrollo videojuegos 2D y diseño arte digital.</p>
+      <div class="status-badge">
+        <span class="status-dot"></span> Disponible para nuevos proyectos
+      </div>
+      <h1>¡Hola! Soy <span class="highlight">Nico</span></h1>
+      <h2>Ingeniero Multimedia &amp; GameDev</h2>
+      <p class="bio-short">
+        Creo aplicaciones web interactivas, desarrollo videojuegos 2D con mecánicas personalizadas y diseño piezas visuales impactantes.
+      </p>
       <div class="hero-btns">
-        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#proyectos" class="btn btn-primary">Explorar Proyectos</a>
         <a href="#contacto" class="btn btn-secondary">Contáctame</a>
       </div>
     </div>
@@ -47,15 +55,17 @@
 
   <!-- ACERCA DE MÍ -->
   <section id="acerca" class="section">
-    <h2 class="section-title">Acerca de mí</h2>
+    <h2 class="section-title"><span class="code-num">01.</span> Acerca de mí</h2>
     <div class="about-grid">
-      <div class="about-img">
-        <img src="assets/perfil.png" alt="Foto de perfil">
+      <div class="about-img-container">
+        <div class="img-frame">
+          <img src="assets/perfil.png" alt="Foto de Nico" onerror="this.src='https://via.placeholder.com/350x350/190f2e/00ff88?text=NICO+.DEV'">
+        </div>
       </div>
       <div class="about-text">
         <h3>¿Quién soy?</h3>
-        <p>Soy estudiante de Ingeniería Multimedia apasionado por el desarrollo Frontend, la creación de videojuegos 2D y el diseño gráfico digital.</p>
-        <p>Me enfoco en crear productos funcionales, dinámicos y atractivos, cuidando cada detalle visual e interactivo.</p>
+        <p>Estudiante de Ingeniería Multimedia centrado en el desarrollo Frontend, el diseño de videojuegos 2D y la creación de experiencias digitales inmersivas.</p>
+        <p>Me apasiona combinar lógica y creatividad: desde programar mecánicas en Construct 3 y Java hasta estructurar interfaces con HTML/CSS/JS y pulir detalles artísticos en Photoshop.</p>
         <a href="#contacto" class="btn btn-primary">Trabajemos juntos</a>
       </div>
     </div>
@@ -63,22 +73,53 @@
 
   <!-- HABILIDADES -->
   <section id="habilidades" class="section">
-    <h2 class="section-title">Habilidades</h2>
+    <h2 class="section-title"><span class="code-num">02.</span> Mis Habilidades</h2>
     <div class="skills-grid">
       <div class="skill-card">
-        <h4>HTML5 & CSS3</h4>
+        <div class="skill-header">
+          <h4>HTML5 &amp; CSS3</h4>
+          <span class="skill-percent">90%</span>
+        </div>
         <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
       </div>
+
       <div class="skill-card">
-        <h4>JavaScript</h4>
+        <div class="skill-header">
+          <h4>JavaScript (ES6+)</h4>
+          <span class="skill-percent">80%</span>
+        </div>
         <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
       </div>
+
       <div class="skill-card">
-        <h4>Construct 3 / GameDev</h4>
+        <div class="skill-header">
+          <h4>Construct 3 / GameDev</h4>
+          <span class="skill-percent">88%</span>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width: 88%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <h4>Java &amp; POO</h4>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-header">
+          <h4>Photoshop / Pixel Art</h4>
+          <span class="skill-percent">85%</span>
+        </div>
         <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
       </div>
+
       <div class="skill-card">
-        <h4>Diseño Gráfico / Photoshop</h4>
+        <div class="skill-header">
+          <h4>Responsive Design</h4>
+          <span class="skill-percent">85%</span>
+        </div>
         <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
       </div>
     </div>
@@ -86,21 +127,52 @@
 
   <!-- PROYECTOS -->
   <section id="proyectos" class="section">
-    <h2 class="section-title">Proyectos</h2>
+    <h2 class="section-title"><span class="code-num">03.</span> Proyectos</h2>
     <div class="projects-grid">
 
       <!-- Tarjeta Proyecto 1 -->
       <article class="project-card">
-        <img src="assets/proyecto1.png" alt="Proyecto Xenomission">
+        <div class="project-img-wrapper">
+          <img src="assets/proyecto1.png" alt="Xenomission" onerror="this.src='https://via.placeholder.com/400x220/190f2e/00ff88?text=XENOMISSION'">
+        </div>
         <div class="project-info">
-          <span class="badge">Videojuego 2D</span>
+          <span class="badge">Videojuego 2D / RPG</span>
           <h3>Xenomission</h3>
-          <p>Juego de acción y aventuras RPG con mecánicas avanzadas y sprites en pixel art.</p>
+          <p>Proyecto original de acción y aventuras RPG con mecánicas personalizadas de combate, sistemas de inventario y arte gráfico original.</p>
+          <div class="project-tech-tags">
+            <span>Construct 3</span>
+            <span>JS</span>
+            <span>Photoshop</span>
+          </div>
           <button class="btn btn-primary btn-modal" 
                   data-title="Xenomission" 
                   data-category="Videojuego 2D / Construct 3"
-                  data-desc="Proyecto en desarrollo enfocado en mecánicas de combate, inventario y diseño de personajes personalizados."
+                  data-desc="Juego en desarrollo con mapas personalizados, matrices de inventario y sistema de guardado. Incluye animaciones personalizadas en pixel art."
                   data-tech="Construct 3, JavaScript, Photoshop">
+            Ver detalle
+          </button>
+        </div>
+      </article>
+
+      <!-- Tarjeta Proyecto 2 -->
+      <article class="project-card">
+        <div class="project-img-wrapper">
+          <img src="assets/proyecto2.png" alt="Monster Store" onerror="this.src='https://via.placeholder.com/400x220/190f2e/00ff88?text=MONSTER+STORE'">
+        </div>
+        <div class="project-info">
+          <span class="badge">E-Commerce Web</span>
+          <h3>Monster Store</h3>
+          <p>Sitio web interactivo con catálogo dinámico de productos, filtro de categorías y funcionalidad de carrito de compras.</p>
+          <div class="project-tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <button class="btn btn-primary btn-modal" 
+                  data-title="Monster Store" 
+                  data-category="Web / E-Commerce"
+                  data-desc="Plataforma de comercio electrónico maquetada con CSS Grid y Flexbox. Cuenta con modal de productos y persistencia con LocalStorage."
+                  data-tech="HTML5, CSS3, JavaScript ES6">
             Ver detalle
           </button>
         </div>
@@ -111,32 +183,32 @@
 
   <!-- CONTACTO -->
   <section id="contacto" class="section">
-    <h2 class="section-title">Contacto</h2>
-    <div class="contact-container">
-      <p>¿Tienes una idea o proyecto en mente? ¡Hablemos!</p>
-      <a href="mailto:tu-correo@email.com" class="btn btn-primary">Enviar Correo</a>
+    <h2 class="section-title"><span class="code-num">04.</span> Contacto</h2>
+    <div class="contact-card">
+      <h3>¿Tienes una idea o proyecto?</h3>
+      <p>Estoy buscando oportunidades para colaborar en proyectos web, videojuegos o desarrollo digital. ¡Mándame un mensaje!</p>
+      <a href="mailto:nicolas.huertas@email.com" class="btn btn-primary btn-large">Enviar mensaje</a>
     </div>
   </section>
 
-  <!-- MODAL DE PROYECTO -->
+  <!-- VENTANA MODAL -->
   <div class="modal" id="project-modal" aria-hidden="true">
     <div class="modal-content">
       <button class="modal-close" id="modal-close">&times;</button>
       <span class="badge" id="modal-category">Categoría</span>
       <h2 id="modal-title">Título del Proyecto</h2>
-      <p id="modal-desc">Descripción detallada del proyecto...</p>
+      <p id="modal-desc">Descripción detallada...</p>
       <div class="modal-tech">
-        <h4>Tecnologías:</h4>
+        <h4>Tecnologías utilizadas:</h4>
         <p id="modal-tech-list">HTML, CSS, JS</p>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>© 2026 Nico. Todos los derechos reservados.</p>
+    <p>© 2026 Nico .DEV — Diseñado &amp; Desarrollado con <span>♥</span></p>
   </footer>
 
-  <!-- SCRIPT -->
   <script src="script.js"></script>
 </body>
 </html>
